@@ -35,6 +35,11 @@
     align-items: center;
     padding: 10px;
 }
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
 
 
  
