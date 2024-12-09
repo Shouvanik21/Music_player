@@ -8,7 +8,27 @@
 </head>
 <body>
     <div class="container">
-         
+        <div class="header">
+            <h2>BLARE</h2>
+        </div>
+        <div class="player">
+            <div class="wrapper">
+                <div class="details">
+                    <div class="now-playing">Playing X of Y</div>
+                    <div class="track-art"></div>
+                    <div class="track-name">track Name</div>
+                    <div class="track-artist">Track Artist</div>
+                </div>
+                <div class="slider">
+                    <div class="current-time">00:00</div>
+                    <input type="range" min="1" max="100" value="0" onChange="seekTo()" class="seek-slider">
+                    <div class="total-duration">00:00</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Made with ❤️ by Shouvanik</h2>
+        </div>
     </div>
 </body>
 </html>
