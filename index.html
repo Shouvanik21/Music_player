@@ -16,22 +16,16 @@
         <div class="player">
             <div class="wrapper">
                 <div class="details">
-                    <div class="now-playing">Playing X of Y</div>
+                    <!-- <div class="now-playing">Playing X of Y</div> -->
                     <div class="track-pic"></div>
-                    <div class="track-name">track Name</div>
+                    <div class="track-name">Track Name</div>
                     <div class="track-artist">Track Artist</div>
                 </div>
                 <div class="slider-track">
                     <div class="current-time">00:00</div>
-                    <input type="range" min="1" max="100" value="0"  class="seek-slider onChange="seekTo()"">
+                    <input type="range" min="1" max="100" value="0"  class="seek-slider" onChange="seekTo()">
                     <div class="total-duration">00:00</div>
-                </div>
-                <div class="slider-volume">
-                    <i class="ri-volume-down-fill"></i>
-                    <input type="range" min="1" max="100" value="99" class="volume-slider" onChange="setVolume()">
-                    <i class="ri-volume-up-fill"></i>                    
-                </div>
-            
+                </div>            
                 <div class="buttons">
                     <div class="random-btn" onclick="randomTrack()">
                         <i class="ri-shuffle-line"></i>

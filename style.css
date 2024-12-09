@@ -3,8 +3,14 @@
     padding: 0;
     font-family: "Poppins",sans-serif;
 }
+/* .header{
+    text-align: center;
+}
+.footer{
+    text-align: center;
+} */
 .player{
-    height: 95vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,24 +52,65 @@
     font-size: 1.25rem;
     margin-top: 5px;
 }
-/* .slider-track{
+.slider-track{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
-.slider-volume{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.seek-slider{
+    -webkit-appearance: none;
+    -moz-appearance:none ;
+    appearance: none;
+    height: 5px;
+    background: black;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: opacity 0.2s;    
+}
+.seek_slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: white;
+    border: 3px solid black;
+    cursor: grab;
+    border-radius: 100%;
+}
+.seek-slider:hover{
+    opacity: 1.0;
+}
+.seek-slider{
+    width: 60%;
+}
+.current-time,.total-duration{
     padding: 10px;
-}*/
+}
 .buttons{
     display: flex;
     justify-content: center;
     align-items: center; 
     margin:15px 0 15px 0;
 }
+.active{
+    color:black;
+}
+.random-btn,.prev-btn,.playpause-btn,.next-btn,.repeat-btn{
+    font-size: 1.5rem;
+    padding: 25px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.random-btn:hover,.prev-btn:hover,.playpause-btn:hover,.next-btn:hover,.repeat-btn:hover{
+    opacity: 1.0;
+}
+.ri-shuffle-line,.ri-rewind-fill,.ri-pause-line,.ri-speed-fill,.ri-reset-right-line{
+    cursor: pointer;
+}
+
+
 
 
  
