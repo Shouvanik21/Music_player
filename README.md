@@ -1,2 +1,2 @@
 # Music_player
-<h2>this is a music player made in Gta 6 theme</h2>
+<h2>this is a music player app</h2>
