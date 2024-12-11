@@ -44,3 +44,15 @@ const music_list=[
         music:"./media/mediasong/NEFFEX - Best of Me.mp3"
     }
 ];
+
+loadTrack(track_index);
+
+function loadTrack(track_index){
+    clearInterval(updateTimer);
+    reset();
+
+    curr_track.src=music_list[track_index].music;
+    curr_track.load();
+
+    
+}
