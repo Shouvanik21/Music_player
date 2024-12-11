@@ -54,5 +54,9 @@ function loadTrack(track_index){
     curr_track.src=music_list[track_index].music;
     curr_track.load();
 
+    track_art.style.backgroundImage="url("+music_list[track_index].img+")";
+    track_name.innerHTML=music_list[track_index].name;
+    track_artist.innerHTML=music_list[track_index].artist;
+
     
 }
