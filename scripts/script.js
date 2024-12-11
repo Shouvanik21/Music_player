@@ -53,3 +53,40 @@ function pauseRandom(){
     isRandom = false;
     randomIcon.classList.remove('randomActive');
 }
+
+function playpauseTrack(){
+    isPlaying?pauseTrack():playTrack();
+}
+function playTrack(){
+    curr_track.play();
+    isPlaying=true;
+    playpause_btn.innerHTML='<i class="ri-pause-large-line"></i>';
+}
+function pauseTrack(){
+    curr_track.pause();
+    isPlaying=false;
+    playpause_btn.innerHTML='<i class="ri-play-large-fill"></i>';
+}
+
+function prevTrack(){
+    if(track_index>0){
+        track_index-=1;
+    }
+    else{
+        track_index=music_list.length-1;
+    }
+    loadTrack(track_index);
+    playTrack();
+}
+function nextTrack(){
+    if(track_index < music_list.length - 1 && isRandom === false){
+        track_index += 1;
+    }else if(track_index < music_list.length - 1 && isRandom === true){
+        let random_index = Number.parseInt(Math.random() * music_list.length);
+        track_index = random_index;
+    }else{
+        track_index = 0;
+    }
+    loadTrack(track_index);
+    playTrack();
+}
