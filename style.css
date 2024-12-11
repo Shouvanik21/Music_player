@@ -12,7 +12,7 @@
 }
  .container{
     min-height: 100vh;
-    background-image: url("./images/img2.jpg");
+    background-image: url("./images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -25,11 +25,11 @@
     flex-direction: column;
 }
 .wrapper{
-    backdrop-filter: blur(10px);
-    border :1px solid black;
+    backdrop-filter: blur(15px);
+    border :1px solid;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.597);
+    box-shadow: 0px 0px 20px whitesmoke;
 }
 .details{
     display: flex;
@@ -41,12 +41,12 @@
     height: 250px;
     width: 250px;
     margin: 25px;
-    border: 1px solid black;
+    border: 1px solid;
     background-position: center;
     border-radius: 50%;
-    -moz-box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.597);/*used to add these latest styles in the older versions of mozzila browser */
-    -webkit-box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.597);/*used to add these latest styles in the older versions of browsers that use webkit engine like safari and older versions of chrome*/
-    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.597);/*used to add styles in the latest versions of the browser*/
+    -moz-box-shadow: 0px 0px 20px whitesmoke;/*used to add these latest styles in the older versions of mozzila browser */
+    -webkit-box-shadow: 0px 0px 20px whitesmoke;/*used to add these latest styles in the older versions of browsers that use webkit engine like safari and older versions of chrome*/
+    box-shadow: 0px 0px 20px whitesmoke;/*used to add styles in the latest versions of the browser*/
     -moz-border-radius:190px;
     -webkit-border-radius:190px;
     border-radius:190px;
@@ -72,10 +72,10 @@
     -moz-appearance:none ;
     appearance: none;
     height: 5px;
-    background: black;
+    background-color: white;
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
-    transition: opacity 0.2s;    
+    transition: opacity 0.2s;
 }
 .seek_slider::-webkit-slider-thumb{
     -webkit-appearance: none;
