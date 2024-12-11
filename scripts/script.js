@@ -41,3 +41,15 @@ function reset(){
     total_duration.innerHTML="00:00";
     seek_slider.value=0;
 }
+
+function randomTrack(){
+    isRandom ? pauseRandom() : playRandom();
+}
+function playRandom(){
+    isRandom = true;
+    randomIcon.classList.add('randomActive');
+}
+function pauseRandom(){
+    isRandom = false;
+    randomIcon.classList.remove('randomActive');
+}
