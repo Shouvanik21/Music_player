@@ -32,7 +32,7 @@ function loadTrack(track_index){
     track_name.innerHTML=music_list[track_index].name;
     track_artist.innerHTML=music_list[track_index].artist;
 
-    updateTimer=setInterval(setUpdate,1000);
+    updateTimer=setInterval(setUpdateTimer,1000);
 
     curr_track.addEventListener("ended",nextTrack);
 }
@@ -101,4 +101,11 @@ function nextTrack(){
 function seekTo(){
     let seekto = curr_track.duration * (seek_slider.value / 100);
     curr_track.currentTime = seekto;
+}
+function setUpdateTimer(){
+    let seekPosition=0;
+    if(isNaN(curr_track.duration)){
+        seekPosition=curr_track.currentTime*(100/curr_track.duration);
+        seek_slider.value=seekPosition;
+    }
 }
