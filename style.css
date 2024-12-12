@@ -4,18 +4,15 @@
     font-family: "Poppins",sans-serif;
     color: white;
 }
-.header{
-    text-align: left;
-}
-.footer{
-    text-align: right;
-}
  .container{
     min-height: 100vh;
     background-image: url("./images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
  }
 .player{
     height: 90vh;
@@ -118,6 +115,7 @@
 .ri-shuffle-line,.ri-rewind-fill,.ri-pause-line,.ri-speed-fill,.ri-reset-right-line{
     cursor: pointer;
 }
+
 
 
 

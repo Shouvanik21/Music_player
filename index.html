@@ -10,20 +10,16 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h2>BLARE</h2>
-        </div>
         <div class="player">
             <div class="wrapper">
                 <div class="details">
-                    <!-- <div class="now-playing">Playing X of Y</div> -->
                     <div class="track-pic"></div>
                     <div class="track-name">Track Name</div>
                     <div class="track-artist">Track Artist</div>
                 </div>
                 <div class="slider-track">
                     <div class="current-time">00:00</div>
-                    <input type="range" min="1" max="100" value="0"  class="seek-slider" onChange="seekTo()">
+                    <input type="range" min="0" max="100" value="0"  class="seek-slider" onChange="seekTo()">
                     <div class="total-duration">00:00</div>
                 </div>            
                 <div class="buttons">
@@ -43,19 +39,7 @@
                         <i class="ri-reset-right-line"></i>
                     </div>
                 </div>
-                <!-- <div id="wave">
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                    <span class="stroke"></span>
-                </div>   -->
             </div>    
-        </div>
-        <div class="footer">
-            <h2>Made with ❤️ by Atreon</h2>
         </div>
     </div>
     <script src="./scripts/script.js"></script>
