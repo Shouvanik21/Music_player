@@ -118,4 +118,7 @@ function setUpdateTimer(){
     if(durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
     if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
     if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
+
+    curr_time.innerHTML=currentMinutes+":"+currentSeconds;
+    total_duration.innerHTML=totalMinutes+":"+totalSeconds;
 }
