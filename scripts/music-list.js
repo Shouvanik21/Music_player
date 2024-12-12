@@ -1,15 +1,15 @@
 const music_list=[
     {
         img:"./media/pic/img1.jpg",
-        name:"One Of The Girls",
-        artist:"Jennie Kim, Lily-Rose Depp, and The Weeknd",
-        music:"./media/song/One-Of-The-Girls.mp3"
-    },
-    {
-        img:"./media/pic/img2.jpg",
         name:"Heat Waves",
         artist:"Glass Animals",
         music:"./media/song/Heat-Waves.mp3"
+    },
+    {
+        img:"./media/pic/img2.jpg",
+        name:"One Of The Girls",
+        artist:"Jennie Kim, Lily-Rose Depp, and The Weeknd",
+        music:"./media/song/One-Of-The-Girls.mp3"
     },
     {
         img:"./media/pic/img3.jpg",
@@ -34,5 +34,11 @@ const music_list=[
         name:"I Wanna Be Yours",
         artist:"Arctic Monkeys",
         music:"./media/song/Arctic Monkeys - I Wanna Be Yours.mp3"
+    },
+    {
+        img:"./media/pic/img7.jpg",
+        name:"Unforgettable",
+        artist:"PnB Rock",
+        music:"./media/song/PnB Rock - Unforgettable.mp3"
     }
 ];

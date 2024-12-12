@@ -104,21 +104,21 @@ function seekTo(){
 }
 function setUpdateTimer(){
     let seekPosition=0;
-    if(isNaN(curr_track.duration)){
+    if(!isNaN(curr_track.duration)){
         seekPosition=curr_track.currentTime*(100/curr_track.duration);
         seek_slider.value=seekPosition;
+
+        let currentMinutes=Math.floor(curr_track.currentTime/60);
+        let currentSeconds=Math.floor(curr_track.currentTime-currentMinutes*60);
+        let totalMinutes=Math.floor(curr_track.duration/60);
+        let totalSeconds=Math.floor(curr_track.duration-totalMinutes*60);
+
+        if(currentSeconds < 10) {currentSeconds = "0" + currentSeconds; }
+        if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
+        if(totalSeconds < 10) { totalSeconds = "0" + totalSeconds; }
+        if(totalMinutes < 10) { totalMinutes = "0" + totalMinutes; }
+
+        curr_time.textContent=currentMinutes+":"+currentSeconds;
+        total_duration.textContent=totalMinutes+":"+totalSeconds;
     }
-
-    let currentMinutes=Math.floor(curr_track.currentTime/60);
-    let currentSeconds=Math.floor(curr_track.currentTime-currentMinutes*60);
-    let totalMinutes=Math.floor(curr_track.duration/60);
-    let totalSeconds=Math.floor(curr_track.duration-totalMinutes*60);
-
-    if(currentSeconds < 10) {currentSeconds = "0" + currentSeconds; }
-    if(durationSeconds < 10) { durationSeconds = "0" + durationSeconds; }
-    if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
-    if(durationMinutes < 10) { durationMinutes = "0" + durationMinutes; }
-
-    curr_time.innerHTML=currentMinutes+":"+currentSeconds;
-    total_duration.innerHTML=totalMinutes+":"+totalSeconds;
 }

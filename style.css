@@ -43,13 +43,13 @@
     margin: 25px;
     border: 1px solid;
     background-position: center;
-    border-radius: 50%;
+    border-radius: 5%;
     -moz-box-shadow: 0px 0px 20px whitesmoke;/*used to add these latest styles in the older versions of mozzila browser */
     -webkit-box-shadow: 0px 0px 20px whitesmoke;/*used to add these latest styles in the older versions of browsers that use webkit engine like safari and older versions of chrome*/
     box-shadow: 0px 0px 20px whitesmoke;/*used to add styles in the latest versions of the browser*/
-    -moz-border-radius:190px;
-    -webkit-border-radius:190px;
-    border-radius:190px;
+    -moz-border-radius:5%;
+    -webkit-border-radius:5%;
+    border-radius:5%;
 }
 .now-playing{
     font-size: 1rem;
