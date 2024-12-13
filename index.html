@@ -9,37 +9,45 @@
     <title>BLARE</title>
 </head>
 <body>
-    <div class="container">
-        <div class="player">
-            <div class="wrapper">
-                <div class="details">
-                    <div class="track-pic"></div>
-                    <div class="track-name">Track Name</div>
-                    <div class="track-artist">Track Artist</div>
-                </div>
-                <div class="slider-track">
-                    <div class="current-time">00:00</div>
-                    <input type="range" min="0" max="100" value="0"  class="seek-slider" onChange="seekTo()">
-                    <div class="total-duration">00:00</div>
-                </div>            
-                <div class="buttons">
-                    <div class="random-btn" onclick="randomTrack()">
-                        <i class="ri-shuffle-line"></i>
+    <div class="container">        
+        <div class="main">
+            <div class="header">
+                <h2>BLARE</h2>
+            </div>
+            <div class="player">
+                <div class="wrapper">
+                    <div class="details">
+                        <div class="track-pic"></div>
+                        <div class="track-name">Track Name</div>
+                        <div class="track-artist">Track Artist</div>
                     </div>
-                    <div class="prev-btn" onclick="prevTrack()">
-                        <i class="ri-rewind-fill"></i>
+                    <div class="slider-track">
+                        <div class="current-time">00:00</div>
+                        <input type="range" min="0" max="100" value="0"  class="seek-slider" onChange="seekTo()">
+                        <div class="total-duration">00:00</div>
+                    </div>            
+                    <div class="buttons">
+                        <div class="random-btn" onclick="randomTrack()">
+                            <i class="ri-shuffle-line"></i>
+                        </div>
+                        <div class="prev-btn" onclick="prevTrack()">
+                            <i class="ri-rewind-fill"></i>
+                        </div>
+                        <div class="playpause-btn" onclick="playpauseTrack()">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                        <div class="next-btn" onclick="nextTrack()">
+                            <i class="ri-speed-fill"></i>
+                        </div>
+                        <div class="repeat-btn" onclick="repeatTrack()">
+                            <i class="ri-reset-right-line"></i>
+                        </div>
                     </div>
-                    <div class="playpause-btn" onclick="playpauseTrack()">
-                        <i class="ri-play-large-fill"></i>
-                    </div>
-                    <div class="next-btn" onclick="nextTrack()">
-                        <i class="ri-speed-fill"></i>
-                    </div>
-                    <div class="repeat-btn" onclick="repeatTrack()">
-                        <i class="ri-reset-right-line"></i>
-                    </div>
-                </div>
-            </div>    
+                </div>    
+            </div>
+            <div class="footer">
+                <h2>Made with ❤️ by Shouvanik</h2>
+            </div>
         </div>
     </div>
     <script src="./scripts/script.js"></script>

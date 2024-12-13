@@ -4,16 +4,26 @@
     font-family: "Poppins",sans-serif;
     color: white;
 }
+.header{
+    height: 5vh;
+    text-align: left;
+    
+}
+.footer{
+    height: 5vh;
+    text-align: right;
+}
  .container{
     min-height: 100vh;
     background-image: url("./images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- }
+    /* align-items: center; */
+}
+.main{
+    height: 100vh;
+ } 
 .player{
     height: 90vh;
     display: flex;
