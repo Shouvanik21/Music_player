@@ -25,9 +25,9 @@ const music_list=[
     },
     {
         img:"./media/pic/img5.jpg",
-        name:"Best of Me",
+        name:"Grateful",
         artist:"NEFFEX",
-        music:"./media/song/NEFFEX - Best of Me.mp3"
+        music:"./media/song/NEFFEX - Grateful.mp3"
     },
     {
         img:"./media/pic/img6.jpg",
@@ -43,9 +43,9 @@ const music_list=[
     },
     {
         img:"./media/pic/img8.jpg",
-        name:"Unforgettable",
-        artist:"PnB Rock",
-        music:"./media/song/PnB Rock - Unforgettable.mp3"
+        name:"As You Fade Away",
+        artist:"NEFFEX",
+        music:"./media/song/As_You_Fade_Away-NEFFEX.mp3"
     },
     {
         img:"./media/pic/img9.jpg",

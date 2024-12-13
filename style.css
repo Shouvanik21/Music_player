@@ -22,7 +22,7 @@
     flex-direction: column;
 }
 .wrapper{
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(20px);
     border :1px solid;
     padding: 30px;
     border-radius: 15px;
