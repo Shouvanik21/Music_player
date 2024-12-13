@@ -6,12 +6,17 @@
 }
 .header{
     height: 10vh;
-    text-align: left;
-    
+    text-align: left;    
 }
 .footer{
     height: 10vh;
     text-align: right;
+    font-size: clamp(1.3rem,2vw,2.1rem);
+    font-family: "Raleway",sans-serif;
+    margin-right: 110px;
+}
+.boldness{
+    color: red;
 }
  .container{
     min-height: 100vh;
@@ -19,7 +24,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* align-items: center; */
 }
 .main{
     height: 100vh;
