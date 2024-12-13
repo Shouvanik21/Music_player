@@ -5,12 +5,12 @@
     color: white;
 }
 .header{
-    height: 5vh;
+    height: 10vh;
     text-align: left;
     
 }
 .footer{
-    height: 5vh;
+    height: 10vh;
     text-align: right;
 }
  .container{
@@ -25,7 +25,7 @@
     height: 100vh;
  } 
 .player{
-    height: 90vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
