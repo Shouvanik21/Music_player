@@ -78,9 +78,9 @@ footer{
 .track-name{
     font-size: 30px;
     font-family: "goodtimes",sans-serif;
-    color:#afb0b6;
 }
 .track-artist{
+    color:#afb0b6;
     font-size: 15px;
     margin-top: 10px;
     font-family: "goodtimes",sans;
