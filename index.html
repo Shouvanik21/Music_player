@@ -7,51 +7,48 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap" rel="stylesheet">
     <title>BLARE</title>
 </head>
 <body>
-    <div class="container">        
-        <div class="main">
-            <header class="header">
-                <h2>BLARE</h2>
-            </header>
-            <div class="player">
-                <div class="wrapper">
-                    <div class="details">
-                        <div class="track-pic"></div>
-                        <div class="track-name">Track Name</div>
-                        <div class="track-artist">Track Artist</div>
-                    </div>
-                    <div class="slider-track">
-                        <div class="current-time">00:00</div>
-                        <input type="range" min="0" max="100" value="0"  class="seek-slider" onChange="seekTo()">
-                        <div class="total-duration">00:00</div>
-                    </div>            
-                    <div class="buttons">
-                        <div class="random-btn" onclick="randomTrack()">
-                            <i class="ri-shuffle-line"></i>
-                        </div>
-                        <div class="prev-btn" onclick="prevTrack()">
-                            <i class="ri-rewind-fill"></i>
-                        </div>
-                        <div class="playpause-btn" onclick="playpauseTrack()">
-                            <i class="ri-play-large-fill"></i>
-                        </div>
-                        <div class="next-btn" onclick="nextTrack()">
-                            <i class="ri-speed-fill"></i>
-                        </div>
-                        <div class="repeat-btn" onclick="repeatTrack()">
-                            <i class="ri-reset-right-line"></i>
-                        </div>
-                    </div>
-                </div>    
+    <header class="header">
+        <h2>BLARE</h2>
+    </header>
+    <div class="player">
+        <div class="wrapper">
+            <div class="details">
+                <div class="track-pic"></div>
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Artist Name</div>
             </div>
-            <footer class="footer">
-                Made By
-                <b class="boldness">ATREON</b>
-            </footer>
-        </div>
+            <div class="slider-track">
+                <div class="current-time">00:00</div>
+                <input type="range" min="0" max="100" value="0"  class="seek-slider" onChange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>            
+            <div class="buttons">
+                <div class="random-btn" onclick="randomTrack()">
+                    <i class="ri-shuffle-line"></i>
+                </div>
+                <div class="prev-btn" onclick="prevTrack()">
+                    <i class="ri-rewind-fill"></i>
+                </div>
+                <div class="playpause-btn" onclick="playpauseTrack()">
+                    <i class="ri-play-large-fill"></i>
+                </div>
+                <div class="next-btn" onclick="nextTrack()">
+                    <i class="ri-speed-fill"></i>
+                </div>
+                <div class="repeat-btn" onclick="repeatTrack()">
+                    <i class="ri-reset-right-line"></i>
+                </div>
+            </div>
+        </div>    
     </div>
+    <footer class="footer">
+        Made By
+        <b class="boldness">ATREON</b>
+    </footer>
     <script src="./scripts/script.js"></script>
     <script src="./scripts/music-list.js"></script>
 </body>

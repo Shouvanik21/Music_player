@@ -1,33 +1,42 @@
+/* @font-face {
+    font-family: "goodtimes";
+    src: url("./goodtimes.otf") format("opentype");
+} */
 *{
     margin: 0;
     padding: 0;
     font-family: "Poppins",sans-serif;
     color: white;
 }
-.header{
-    height: 10vh;
-    text-align: left;    
-}
-.footer{
-    height: 10vh;
-    text-align: right;
-    font-size: clamp(1.3rem,2vw,2.1rem);
-    font-family: "Raleway",sans-serif;
-    margin-right: 110px;
-}
-.boldness{
-    color: red;
-}
- .container{
-    min-height: 100vh;
+body{
+    height: 100vh;
     background-image: url("./images/img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
-.main{
-    height: 100vh;
- } 
+header{
+    height: 10vh;  
+    font-size: 30px;
+    font-family: "Raleway",sans-serif;      
+    box-sizing: border-box;
+    padding-left: 150px;
+    padding-top: 40px;
+}
+h2{
+    color: red;
+    font-family: "Yellowtail",sans-serif;
+}
+footer{
+    height: 10vh;
+    text-align: right;
+    font-size: clamp(1.3rem,2vw,2.1rem);
+    font-family: "Raleway",sans-serif;
+    padding-right: 110px;
+}
+.boldness{
+    color: red;
+}
 .player{
     height: 80vh;
     display: flex;
@@ -40,13 +49,14 @@
     border :1px solid;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0px 0px 20px whitesmoke;
+    box-shadow: 0px 0px 25px whitesmoke;
 }
 .details{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* font-family: "goodtimes",sans-serif; */
 }
 .track-pic{
     height: 250px;
