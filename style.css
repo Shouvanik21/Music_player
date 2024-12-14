@@ -1,7 +1,7 @@
-/* @font-face {
+@font-face {
     font-family: "goodtimes";
     src: url("./goodtimes.otf") format("opentype");
-} */
+}
 *{
     margin: 0;
     padding: 0;
@@ -17,8 +17,7 @@ body{
 }
 header{
     height: 10vh;  
-    font-size: 30px;
-    font-family: "Raleway",sans-serif;      
+    font-size: 30px;     
     box-sizing: border-box;
     padding-left: 150px;
     padding-top: 40px;
@@ -26,6 +25,7 @@ header{
 h2{
     color: red;
     font-family: "Yellowtail",sans-serif;
+    text-shadow: red 1px 0 10px;
 }
 footer{
     height: 10vh;
@@ -76,11 +76,14 @@ footer{
     font-size: 1rem;
 }
 .track-name{
-    font-size: 2.5rem;
+    font-size: 30px;
+    font-family: "goodtimes",sans-serif;
+    color:#afb0b6;
 }
 .track-artist{
-    font-size: 1.25rem;
-    margin-top: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: "goodtimes",sans;
 }
 .slider-track{
     display: flex;

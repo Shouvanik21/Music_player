@@ -8,7 +8,7 @@ const music_list=[
     {
         img:"./media/pic/img2.jpg",
         name:"One Of The Girls",
-        artist:"Jennie Kim, Lily-Rose Depp, and The Weeknd",
+        artist:"Jennie Kim, Lily-Rose Depp and The Weeknd",
         music:"./media/song/One-Of-The-Girls.mp3"
     },
     {
