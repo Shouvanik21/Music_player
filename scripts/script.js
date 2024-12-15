@@ -1,4 +1,7 @@
-const now_playing=document.querySelector(".now-playing");
+const target_element=document.querySelector(".container");
+const music_player=document.querySelector(".player");
+const main_element=document.querySelector(".main");
+const toggle_player=document.querySelector(".toggle");
 const track_art=document.querySelector(".track-pic");
 const track_name=document.querySelector(".track-name");
 const track_artist=document.querySelector(".track-artist");
@@ -16,7 +19,18 @@ const curr_track=document.createElement("audio");
 let track_index=0;
 let isPlaying=false;
 let isRandom=false;
+let isHidden=false;
 let updateTimer;
+
+toggle_player.addEventListener("click", function(){
+    (isHidden=!isHidden),
+    isHidden
+        ?((music_player.style.width="35vw"),
+        (music_player.style.height="20vh"),
+        (music_player.style.backdropFilter="blur(30px)"),
+        (main_element.remove()))
+        :((target_element.appendChild(music_player)));
+});
 
 loadTrack(track_index);
 
