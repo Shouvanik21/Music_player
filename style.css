@@ -37,26 +37,40 @@ footer{
 .boldness{
     color: red;
 }
-.player{
+.container{
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.wrapper{
-    backdrop-filter: blur(20px);
+.player{
+    backdrop-filter: blur(50px);
     border :1px solid;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 0px 25px whitesmoke;
+}
+.toggle{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border: 1px solid red;
+    /* cursor: crosshair; */
 }
 .details{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* font-family: "goodtimes",sans-serif; */
 }
 .track-pic{
     height: 250px;
@@ -83,7 +97,7 @@ footer{
     color:#afb0b6;
     font-size: 15px;
     margin-top: 10px;
-    font-family: "goodtimes",sans;
+    font-family: "goodtimes",sans-serif;
 }
 .slider-track{
     display: flex;
