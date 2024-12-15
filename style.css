@@ -139,7 +139,7 @@ footer{
 .random-btn:hover,.prev-btn:hover,.playpause-btn:hover,.next-btn:hover,.repeat-btn:hover{
     opacity: 1.0;
 }
-.ri-shuffle-line,.ri-rewind-fill,.ri-pause-line,.ri-speed-fill,.ri-reset-right-line{
+.ri-shuffle-line:hover,.ri-rewind-fill:hover,.ri-pause-large-line:hover,.ri-play-large-fill:hover,.ri-speed-fill:hover,.ri-reset-right-line:hover{
     cursor: pointer;
 }
 
