@@ -52,19 +52,19 @@ footer{
     box-shadow: 0px 0px 25px whitesmoke;
 }
 .toggle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     top: -20px;
     right: -20px;
     z-index: 2;
     height: 50px;
     width: 50px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 50%;    
     background: red;
     border: 1px solid red;
-    /* cursor: crosshair; */
+    cursor: crosshair;
 }
 .details{
     display: flex;
