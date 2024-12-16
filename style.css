@@ -156,6 +156,10 @@ footer{
 .ri-shuffle-line:hover,.ri-rewind-fill:hover,.ri-pause-large-line:hover,.ri-play-large-fill:hover,.ri-speed-fill:hover,.ri-reset-right-line:hover{
     cursor: pointer;
 }
+.player.hide{
+    height: 20vh;
+    width: 30vh;
+}
 
 
 

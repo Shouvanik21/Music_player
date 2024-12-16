@@ -25,11 +25,10 @@ let updateTimer;
 toggle_player.addEventListener("click", function(){
     (isHidden=!isHidden),
     isHidden
-        ?((music_player.style.width="35vw"),
-        (music_player.style.height="20vh"),
-        (music_player.style.backdropFilter="blur(30px)"),
-        (main_element.remove()))
-        :((target_element.appendChild(music_player)));
+        ?(music_player.classList.remove("hide"),
+        (music_player.appendChild(main_element)))
+        :(music_player.classList.add("hide"),
+        (main_element.remove()));
 });
 
 loadTrack(track_index);
