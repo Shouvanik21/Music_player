@@ -156,10 +156,71 @@ footer{
 .ri-shuffle-line:hover,.ri-rewind-fill:hover,.ri-pause-large-line:hover,.ri-play-large-fill:hover,.ri-speed-fill:hover,.ri-reset-right-line:hover{
     cursor: pointer;
 }
-.player.hide{
-    height: 20vh;
-    width: 30vh;
+
+
+
+
+.container2{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.player2{
+    backdrop-filter: blur(50px);
+    border :1px solid;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px whitesmoke;
+    height: 20vh;
+    width: 70vh;
+}
+.toggle2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    z-index: 2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;    
+    background: red;
+    border: 1px solid red;
+    cursor: crosshair;
+}
+.main2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pic{
+    height: 150px;
+    width: 150px;
+    /* margin-right: 250px; */
+    border: 1px solid;
+    background-position: center;
+    border-radius: 5%;
+    -moz-box-shadow: 0px 0px 20px whitesmoke;/*used to add these latest styles in the older versions of mozzila browser */
+    -webkit-box-shadow: 0px 0px 20px whitesmoke;/*used to add these latest styles in the older versions of browsers that use webkit engine like safari and older versions of chrome*/
+    box-shadow: 0px 0px 20px whitesmoke;/*used to add styles in the latest versions of the browser*/
+    -moz-border-radius:5%;
+    -webkit-border-radius:5%;
+    border-radius:5%;
+}
+.name-artist-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    height: 100px;
+}
+/* .player.hide{
+    height: 20vh;
+    width: 70vh;
+} */
 
 
 
