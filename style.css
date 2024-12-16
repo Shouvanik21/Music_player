@@ -209,7 +209,7 @@ footer{
     -webkit-border-radius:5%;
     border-radius:5%;
 }
-.name-artist-buttons{
+.name-artist-slider-buttons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,7 +239,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1px;
+    padding-top: 10px;
+    font-size: medium;
 }
 /* .player.hide{
     height: 20vh;

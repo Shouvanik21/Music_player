@@ -1,35 +1,37 @@
-const target_element=document.querySelector(".container");
-const music_player=document.querySelector(".player");
-const main_element=document.querySelector(".main");
-const toggle_player=document.querySelector(".toggle");
-const track_art=document.querySelector(".track-pic");
-const track_name=document.querySelector(".track-name");
-const track_artist=document.querySelector(".track-artist");
+// const target_element=document.querySelector(".container");
+// const music_player=document.querySelector(".player");
+// const main_element=document.querySelector(".main");
+// const toggle_player=document.querySelector(".toggle");
+// const track_art=document.querySelector(".track-pic");
+const track_art2=document.querySelector(".pic");
+const track_name2=document.querySelector(".name");
+const track_artist2=document.querySelector(".artist");
 
-const playpause_btn=document.querySelector(".playpause-btn");
-const prev_btn=document.querySelector(".prev-btn");
-const next_btn=document.querySelector(".next-btn");
+const playpause_btn2=document.querySelector(".playpause-btn2");
+const prev_btn2=document.querySelector(".prev-btn2");
+const next_btn2=document.querySelector(".next-btn2");
 
-const seek_slider=document.querySelector(".seek-slider");
-const curr_time=document.querySelector(".current-time");
-const total_duration=document.querySelector(".total-duration");
+const seek_slider=document.querySelector(".seek-slider2");
+const curr_time=document.querySelector(".current-time2");
+const total_duration=document.querySelector(".total-duration2");
 const randomIcon=document.querySelector(".ri-shuffle-line");
-const curr_track=document.createElement("audio");
+// const curr_track=document.createElement("audio");
+const curr_track2=document.createElement("audio");
 
 let track_index=0;
 let isPlaying=false;
 let isRandom=false;
-let isHidden=false;
 let updateTimer;
+// let isHidden=false;
 
-toggle_player.addEventListener("click", function(){
-    (isHidden=!isHidden),
-    isHidden
-        ?(music_player.classList.remove("hide"),
-        (music_player.appendChild(main_element)))
-        :(music_player.classList.add("hide"),
-        (main_element.remove()));
-});
+// toggle_player.addEventListener("click", function(){
+//     (isHidden=!isHidden),
+//     isHidden
+//         ?(music_player.classList.remove("hide"),
+//         (music_player.appendChild(main_element)))
+//         :(music_player.classList.add("hide"),
+//         (main_element.remove()));
+// });
 
 loadTrack(track_index);
 
@@ -37,17 +39,22 @@ function loadTrack(track_index){
     clearInterval(updateTimer);
     reset();
 
-    curr_track.src=music_list[track_index].music;
-    curr_track.load();
+    // curr_track.src=music_list[track_index].music;
+    curr_track2.src=music_list[track_index].music;
+    // curr_track.load();
+    curr_track2.load();
 
-    track_art.style.backgroundImage="url("+music_list[track_index].img+")";
-    track_art.style.backgroundSize="cover";
-    track_name.innerHTML=music_list[track_index].name;
-    track_artist.innerHTML=music_list[track_index].artist;
+    // track_art.style.backgroundImage="url("+music_list[track_index].img+")";
+    track_art2.style.backgroundImage="url("+music_list[track_index].img+")";
+    // track_art.style.backgroundSize="cover";
+    track_art2.style.backgroundSize="cover";
+    track_name2.innerHTML=music_list[track_index].name;
+    track_artist2.innerHTML=music_list[track_index].artist;
 
     updateTimer=setInterval(setUpdateTimer,1000);
 
-    curr_track.addEventListener("ended",nextTrack);
+    // curr_track.addEventListener("ended",nextTrack);
+    curr_track2.addEventListener("ended",nextTrack);
 }
 
 function reset(){
@@ -78,14 +85,14 @@ function playpauseTrack(){
     isPlaying?pauseTrack():playTrack();
 }
 function playTrack(){
-    curr_track.play();
+    curr_track2.play();
     isPlaying=true;
-    playpause_btn.innerHTML='<i class="ri-pause-large-line"></i>';
+    playpause_btn2.innerHTML='<i class="ri-pause-large-line"></i>';
 }
 function pauseTrack(){
-    curr_track.pause();
+    curr_track2.pause();
     isPlaying=false;
-    playpause_btn.innerHTML='<i class="ri-play-large-fill"></i>';
+    playpause_btn2.innerHTML='<i class="ri-play-large-fill"></i>';
 }
 
 function prevTrack(){
@@ -112,26 +119,26 @@ function nextTrack(){
 }
 
 function seekTo(){
-    let seekto = curr_track.duration * (seek_slider.value / 100);
-    curr_track.currentTime = seekto;
+    let seekto = curr_track2.duration * (seek_slider2.value / 100);
+    curr_track2.currentTime = seekto;
 }
 function setUpdateTimer(){
     let seekPosition=0;
-    if(!isNaN(curr_track.duration)){
-        seekPosition=curr_track.currentTime*(100/curr_track.duration);
-        seek_slider.value=seekPosition;
+    if(!isNaN(curr_track2.duration)){
+        seekPosition=curr_track2.currentTime*(100/curr_track.duration);
+        seek_slider2.value=seekPosition;
 
-        let currentMinutes=Math.floor(curr_track.currentTime/60);
-        let currentSeconds=Math.floor(curr_track.currentTime-currentMinutes*60);
-        let totalMinutes=Math.floor(curr_track.duration/60);
-        let totalSeconds=Math.floor(curr_track.duration-totalMinutes*60);
+        let currentMinutes=Math.floor(curr_track2.currentTime/60);
+        let currentSeconds=Math.floor(curr_track2.currentTime-currentMinutes*60);
+        let totalMinutes=Math.floor(curr_track2.duration/60);
+        let totalSeconds=Math.floor(curr_track2.duration-totalMinutes*60);
 
         if(currentSeconds < 10) {currentSeconds = "0" + currentSeconds; }
         if(currentMinutes < 10) {currentMinutes = "0" + currentMinutes; }
         if(totalSeconds < 10) { totalSeconds = "0" + totalSeconds; }
         if(totalMinutes < 10) { totalMinutes = "0" + totalMinutes; }
 
-        curr_time.textContent=currentMinutes+":"+currentSeconds;
-        total_duration.textContent=totalMinutes+":"+totalSeconds;
+        curr_time2.textContent=currentMinutes+":"+currentSeconds;
+        total_duration2.textContent=totalMinutes+":"+totalSeconds;
     }
 }
