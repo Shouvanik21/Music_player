@@ -11,9 +11,9 @@ const playpause_btn2=document.querySelector(".playpause-btn2");
 const prev_btn2=document.querySelector(".prev-btn2");
 const next_btn2=document.querySelector(".next-btn2");
 
-const seek_slider=document.querySelector(".seek-slider2");
-const curr_time=document.querySelector(".current-time2");
-const total_duration=document.querySelector(".total-duration2");
+const seek_slider2=document.querySelector(".seek-slider2");
+const curr_time2=document.querySelector(".current-time2");
+const total_duration2=document.querySelector(".total-duration2");
 const randomIcon=document.querySelector(".ri-shuffle-line");
 // const curr_track=document.createElement("audio");
 const curr_track2=document.createElement("audio");
@@ -58,9 +58,9 @@ function loadTrack(track_index){
 }
 
 function reset(){
-    curr_time.innerHTML="00:00";
-    total_duration.innerHTML="00:00";
-    seek_slider.value=0;
+    curr_time2.innerHTML="00:00";
+    total_duration2.innerHTML="00:00";
+    seek_slider2.value=0;
 }
 
 function randomTrack(){
@@ -125,7 +125,7 @@ function seekTo(){
 function setUpdateTimer(){
     let seekPosition=0;
     if(!isNaN(curr_track2.duration)){
-        seekPosition=curr_track2.currentTime*(100/curr_track.duration);
+        seekPosition=curr_track2.currentTime*(100/curr_track2.duration);
         seek_slider2.value=seekPosition;
 
         let currentMinutes=Math.floor(curr_track2.currentTime/60);
