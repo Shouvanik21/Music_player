@@ -38,7 +38,7 @@ footer{
 .boldness{
     color: red;
 }
-.container{
+.container1{
     height: 80vh;
     display: flex;
     justify-content: center;
@@ -158,8 +158,8 @@ footer{
     cursor: pointer;
 }
 
-.CONTAINER{
-    /* display: none; */
+.hidden{
+    display: none;
 }
 
 .container2{

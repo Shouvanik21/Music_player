@@ -1,4 +1,5 @@
-// const target_element=document.querySelector(".container");
+const container1=document.querySelector(".container1");
+const container2=document.querySelector(".container2");
 // const music_player=document.querySelector(".player");
 // const main_element=document.querySelector(".main");
 const toggle_player=document.querySelector(".toggle");
@@ -30,16 +31,21 @@ let track_index=0;
 let isPlaying=false;
 let isRandom=false;
 let updateTimer;
-// let isHidden=false;
+let isHidden=false;
 
 // toggle_player.addEventListener("click", function(){
 //     (isHidden=!isHidden),
 //     isHidden
-//         ?(music_player.classList.remove("hide"),
+//         ?(music_player.classList.remove("container2"),
 //         (music_player.appendChild(main_element)))
-//         :(music_player.classList.add("hide"),
+//         :(music_player.classList.add("player2"),
 //         (main_element.remove()));
 // });
+
+toggle_player.addEventListener("click",function(){
+    container1.classList.toggle('hidden');
+    container2.classList.toggle('hidden');
+});
 
 loadTrack(track_index);
 
