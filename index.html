@@ -22,8 +22,30 @@
             <div class="main2">
                 <div class="pic"></div>
                 <div class="name-artist-buttons">
-                    <div class="name-artist">Track Name</div>
-                    <div class="buttons"></div>
+                    <div class="name">Track Name</div>
+                    <div class="artist">Track Artist</div>
+                    <div class="slider-track2">
+                        <div class="current-time">00:00</div>
+                        <input type="range" min="0" max="100" value="0"  class="seek-slider" onchange="seekTo()">
+                        <div class="total-duration">00:00</div>
+                    </div>
+                    <div class="buttons2">
+                        <div class="random-btn2" onclick="randomTrack()">
+                            <i class="ri-shuffle-line"></i>
+                        </div>
+                        <div class="prev-btn2" onclick="prevTrack()">
+                            <i class="ri-rewind-fill"></i>
+                        </div>
+                        <div class="playpause-btn2" onclick="playpauseTrack()">
+                            <i class="ri-play-large-fill"></i>
+                        </div>
+                        <div class="next-btn2" onclick="nextTrack()">
+                            <i class="ri-speed-fill"></i>
+                        </div>
+                        <div class="repeat-btn2" onclick="repeatTrack()">
+                            <i class="ri-reset-right-line"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
