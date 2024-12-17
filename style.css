@@ -294,6 +294,18 @@ footer{
     height: 20vh;
     width: 70vh;
 } */
+@media screen and (max-width:500px){
+    .header{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .footer{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+}
 
 
 
