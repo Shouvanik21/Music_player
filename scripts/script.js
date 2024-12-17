@@ -5,14 +5,14 @@ const toggle_player2=document.querySelector(".toggle2");
 const track_art=document.querySelector(".track-pic");
 const track_name=document.querySelector(".track-name");
 const track_artist=document.querySelector(".track-artist");
-// const track_art2=document.querySelector(".pic");
-// const track_name2=document.querySelector(".name");
-// const track_artist2=document.querySelector(".artist");
+const track_art2=document.querySelector(".pic");
+const track_name2=document.querySelector(".name");
+const track_artist2=document.querySelector(".artist");
 
 const playpause_btn=document.querySelector(".playpause-btn");
 const prev_btn=document.querySelector(".prev-btn");
 const next_btn=document.querySelector(".next-btn");
-// const playpause_btn2=document.querySelector(".playpause-btn2");
+const playpause_btn2=document.querySelector(".playpause-btn2");
 // const prev_btn2=document.querySelector(".prev-btn2");
 // const next_btn2=document.querySelector(".next-btn2");
 
@@ -30,7 +30,7 @@ let track_index=0;
 let isPlaying=false;
 let isRandom=false;
 let updateTimer;
-let isHidden=false;
+// let isHidden=false;
 
 // toggle_player.addEventListener("click", function(){
 //     (isHidden=!isHidden),
@@ -87,10 +87,10 @@ function loadTrack(track_index){
     track_art.style.backgroundSize="cover";
     track_name.innerHTML=music_list[track_index].name;
     track_artist.innerHTML=music_list[track_index].artist;
-    // track_art2.style.backgroundImage="url("+music_list[track_index].img+")";
-    // track_art2.style.backgroundSize="cover";
-    // track_name2.innerHTML=music_list[track_index].name;
-    // track_artist2.innerHTML=music_list[track_index].artist;
+    track_art2.style.backgroundImage="url("+music_list[track_index].img+")";
+    track_art2.style.backgroundSize="cover";
+    track_name2.innerHTML=music_list[track_index].name;
+    track_artist2.innerHTML=music_list[track_index].artist;
 
     updateTimer=setInterval(setUpdateTimer,1000);
     // updateTimer=setInterval(setUpdateTimer2,1000);
@@ -134,14 +134,14 @@ function playTrack(){
     // curr_track2.play();
     isPlaying=true;
     playpause_btn.innerHTML='<i class="ri-pause-large-line"></i>';
-    // playpause_btn2.innerHTML='<i class="ri-pause-large-line"></i>';
+    playpause_btn2.innerHTML='<i class="ri-pause-large-line"></i>';
 }
 function pauseTrack(){
     curr_track.pause();
     // curr_track2.pause();
     isPlaying=false;
     playpause_btn.innerHTML='<i class="ri-play-large-fill"></i>';
-    // playpause_btn2.innerHTML='<i class="ri-play-large-fill"></i>';
+    playpause_btn2.innerHTML='<i class="ri-play-large-fill"></i>';
 }
 
 function prevTrack(){
