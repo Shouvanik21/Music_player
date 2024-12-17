@@ -1,8 +1,7 @@
-const container1=document.querySelector(".container1");
-const container2=document.querySelector(".container2");
 // const music_player=document.querySelector(".player");
 // const main_element=document.querySelector(".main");
-const toggle_player=document.querySelector(".toggle");
+const toggle_player1=document.querySelector(".toggle1");
+const toggle_player2=document.querySelector(".toggle2");
 const track_art=document.querySelector(".track-pic");
 const track_name=document.querySelector(".track-name");
 const track_artist=document.querySelector(".track-artist");
@@ -42,9 +41,35 @@ let isHidden=false;
 //         (main_element.remove()));
 // });
 
-toggle_player.addEventListener("click",function(){
-    container1.classList.toggle('hidden');
-    container2.classList.toggle('hidden');
+toggle_player1.addEventListener("click",function(){
+    const container1=document.getElementById("container1");
+    const container2=document.getElementById("container2");
+
+    if (container1.style.display === 'flex' || container1.style.display === '') {
+        container1.style.display = 'none';
+        container2.style.display = 'flex';
+      } else if(container2.style.display === 'flex' || container2.style.display === '') {
+        container1.style.display = 'flex';
+        container2.style.display = 'none';
+      }
+      else{
+        console.log("no such cases found");
+      }
+});
+toggle_player2.addEventListener("click",function(){
+    const container1=document.getElementById("container1");
+    const container2=document.getElementById("container2");
+
+    if (container1.style.display === 'flex' || container1.style.display === '') {
+        container1.style.display = 'none';
+        container2.style.display = 'flex';
+      } else if(container2.style.display === 'flex' || container2.style.display === '') {
+        container1.style.display = 'flex';
+        container2.style.display = 'none';
+      }
+      else{
+        console.log("no such cases found");
+      }
 });
 
 loadTrack(track_index);
