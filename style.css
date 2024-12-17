@@ -297,13 +297,33 @@ footer{
 @media screen and (max-width:500px){
     .header{
         margin: 0;
-        padding: 0;
+        padding: 25px;
         text-align: center;
     }
     .footer{
         margin: 0;
         padding: 0;
         text-align: center;
+    }
+    .player{
+        width: 55vw;
+    }
+    .track-pic{
+        height:150px;
+        width: 150px;
+    }
+    .track-name{
+        font-size: 20px;
+    }
+    .track-artist{
+        font-size: 10px;
+    }
+    .buttons{
+        margin-right: 15px;
+    }
+    .random-btn,.prev-btn,.playpause-btn,.next-btn,.repeat-btn{
+        height: auto;
+        width: 0.5px;
     }
 }
 
