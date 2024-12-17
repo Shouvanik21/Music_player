@@ -48,12 +48,9 @@ toggle_player1.addEventListener("click",function(){
     if (container1.style.display === 'flex' || container1.style.display === '') {
         container1.style.display = 'none';
         container2.style.display = 'flex';
-      } else if(container2.style.display === 'flex' || container2.style.display === '') {
+      } else{
         container1.style.display = 'flex';
         container2.style.display = 'none';
-      }
-      else{
-        console.log("no such cases found");
       }
 });
 toggle_player2.addEventListener("click",function(){
@@ -63,12 +60,9 @@ toggle_player2.addEventListener("click",function(){
     if (container1.style.display === 'flex' || container1.style.display === '') {
         container1.style.display = 'none';
         container2.style.display = 'flex';
-      } else if(container2.style.display === 'flex' || container2.style.display === '') {
+      } else{
         container1.style.display = 'flex';
         container2.style.display = 'none';
-      }
-      else{
-        console.log("no such cases found");
       }
 });
 
