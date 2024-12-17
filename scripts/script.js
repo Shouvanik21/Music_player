@@ -48,22 +48,18 @@ toggle_player1.addEventListener("click",function(){
     if (container1.style.display === 'flex' || container1.style.display === '') {
         container1.style.display = 'none';
         container2.style.display = 'flex';
-      } else{
-        container1.style.display = 'flex';
-        container2.style.display = 'none';
-      }
+        toggle_player2.innerHTML='<i class="ri-add-line"></i>';
+    }
 });
 toggle_player2.addEventListener("click",function(){
     const container1=document.getElementById("container1");
     const container2=document.getElementById("container2");
 
-    if (container1.style.display === 'flex' || container1.style.display === '') {
-        container1.style.display = 'none';
-        container2.style.display = 'flex';
-      } else{
+    if (container2.style.display === 'flex' || container2.style.display === '') {
         container1.style.display = 'flex';
         container2.style.display = 'none';
-      }
+        toggle_player1.innerHTML='<i class="ri-subtract-line"></i>';
+    }
 });
 
 loadTrack(track_index);
