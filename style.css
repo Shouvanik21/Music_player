@@ -14,7 +14,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-color: mediumseagreen;
 }
 header{
     height: 10vh;  
@@ -179,7 +178,7 @@ footer{
     border-radius: 15px;
     box-shadow: 0px 0px 25px whitesmoke;
     height: 20vh;
-    width: 75vh;
+    width: 77vh;
 }
 .toggle2{
     display: flex;
@@ -241,10 +240,10 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     width: 350px;
-    padding-top: 15px;
+    padding-top: 18px;
     font-size: large;
 }
-.slider-track2{
+/*.slider-track2{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -278,6 +277,18 @@ footer{
 }
 .seek-slider2{
     width: 60%;
+} */
+.random-btn2,.prev-btn2,.playpause-btn2,.next-btn2,.repeat-btn2{
+    font-size: 1.3rem;
+    /* padding: 25px; */
+    opacity: 0.8;
+    transition: opacity 0.2s;
+}
+.random-btn2:hover,.prev-btn2:hover,.playpause-btn2:hover,.next-btn2:hover,.repeat-btn2:hover{
+    opacity: 1.0;
+}
+.ri-shuffle-line:hover,.ri-rewind-fill:hover,.ri-pause-large-line:hover,.ri-play-large-fill:hover,.ri-speed-fill:hover,.ri-reset-right-line:hover{
+    cursor: pointer;
 }
 /* .player.hide{
     height: 20vh;
