@@ -179,7 +179,7 @@ footer{
     border-radius: 15px;
     box-shadow: 0px 0px 25px whitesmoke;
     height: 20vh;
-    width: 77vh;
+    width: 80vh;
 }
 .toggle2{
     display: flex;
@@ -350,6 +350,12 @@ footer{
     .footer{
         padding-right: 50px;
         font-size: 30px;
+    }
+}
+@media screen and (min-height:800px) and (max-height:960px){
+    .player2{
+        height: 16vh;
+        width: 36vw;
     }
 }
 
