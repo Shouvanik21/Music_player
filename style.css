@@ -316,17 +316,26 @@ footer{
     }
     .track-name{
         font-size: 20px;
+        text-align: center;
     }
     .track-artist{
         font-size: 10px;
+        text-align: center;
     }
     .buttons{
+        font-size: x-small;
         margin-right: 15px;
         height: 70px;
     }
     .random-btn,.prev-btn,.playpause-btn,.next-btn,.repeat-btn{
         height: auto;
         width: 0.5px;
+    }
+    .current-time,.total-duration{
+        font-size: small;
+    }
+    .seek-slider{
+        width: 50vw;
     }
     /* .player2{
         width: 50vw;

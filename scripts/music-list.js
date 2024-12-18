@@ -51,7 +51,7 @@ const music_list=[
         img:"./media/pic/img9.jpg",
         name:"One Kiss",
         artist:"Calvin Harris and Dua Lipa",
-        music:"./media/song/Calvin Harris, Dua Lipa - One Kiss (Lyrics).mp3"
+        music:"./media/song/Calvin Harris, Dua Lipa - One Kiss.mp3"
     },
     {
         img:"./media/pic/img10.jpg",
