@@ -20,7 +20,7 @@ header{
     font-size: 30px;     
     box-sizing: border-box;
     padding-left: 150px;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 h2{
     color: red;
@@ -30,7 +30,7 @@ h2{
 footer{
     height: 10vh;
     text-align: right;
-    font-size: clamp(1.3rem,2vw,2.1rem);
+    font-size: 35px;
     font-family: "Raleway",sans-serif;
     padding-right: 110px;
 }
@@ -340,6 +340,17 @@ footer{
     /* .player2{
         width: 50vw;
     } */
+}
+@media screen and (min-width:500px) and (max-width:1200px){
+    .header{
+        padding-left: 40px;
+        padding-top: 23px;
+        font-size: 27px;
+    }
+    .footer{
+        padding-right: 50px;
+        font-size: 30px;
+    }
 }
 
 
