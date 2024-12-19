@@ -223,6 +223,7 @@ footer{
     flex-direction: column;
     width: 400px;
     height: 100px;
+    margin-right: 10px;
 }
 .name{
     font-size: 30px;
