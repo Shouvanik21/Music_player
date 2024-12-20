@@ -377,6 +377,12 @@ footer{
     }
 }
 @media screen and (min-height:800px) and (max-height:960px){
+    .header{
+        font-size: 33px;
+    }
+    .footer{
+        font-size: 35px;
+    }
     .player2{
         height: 16vh;
         width: 36vw;
