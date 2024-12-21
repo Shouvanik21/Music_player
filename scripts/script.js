@@ -61,6 +61,10 @@ toggle_player2.addEventListener("click",function(){
         toggle_player1.innerHTML='<i class="ri-subtract-line"></i>';
     }
 });
+// toggle_player1.addEventListener("click",()=>{
+//     const container1=document.querySelector(".one");
+//     container1.classList.toggle("shrink");
+// })
 
 loadTrack(track_index);
 
