@@ -19,14 +19,34 @@ header{
     height: 10vh;  
     font-size: 30px;     
     box-sizing: border-box;
-    padding-left: 150px;
-    padding-top: 35px;
+    padding-left: 100px;
+    padding-top: 30px;
 }
+.top{
+    height: 10%;
+    /* position: absolute; */
+    display: inline-block;
+    top: 1px;
+    left: 4%;
+}
+
+.box{
+    border: 1px solid;
+    /* margin-top: 20px; */
+    padding: 5px 15px 5px 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 h2{
     color: red;
     font-family: "Yellowtail",sans-serif;
     text-shadow: red 1px 0 10px;
 }
+
 footer{
     height: 10vh;
     text-align: right;
@@ -76,11 +96,8 @@ h3{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* transition: width 0.5s ease, height 0.5s ease; */
 }
-/* .one.shrink{
-    transition: all 0.5s ease-in;
-} */
+
 .player{
     backdrop-filter: blur(50px);
     border :1px solid;
@@ -396,6 +413,31 @@ h3{
         padding-top: 23px;
         font-size: 27px;
     }
+    .top{
+        height: 10%;
+        /* position: absolute; */
+        display: inline-block;
+        top: 1px;
+        left: 4%;
+    }
+    
+    .box{
+        border: 1px solid;
+        /* margin-top: 20px; */
+        padding: 5px 15px 5px 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 25px whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h2{
+        color: red;
+        font-family: "Yellowtail",sans-serif;
+        text-shadow: red 1px 0 10px;
+    }
+    
     .bottom{
         height: 10%;
         position: fixed;
@@ -436,6 +478,63 @@ h3{
     }
     .footer{
         font-size: 35px;
+    }
+    .header{
+        padding-left: 40px;
+        padding-top: 23px;
+        font-size: 27px;
+    }
+    .top{
+        height: 10%;
+        /* position: absolute; */
+        display: inline-block;
+        top: 1px;
+        left: 4%;
+    }
+    
+    .box{
+        border: 1px solid;
+        /* margin-top: 20px; */
+        padding: 5px 15px 5px 15px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 25px whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    h2{
+        color: red;
+        font-family: "Yellowtail",sans-serif;
+        text-shadow: red 1px 0 10px;
+    }
+    
+    .bottom{
+        height: 10%;
+        position: fixed;
+        display: inline-block;
+        bottom: 1px;
+        right: 4%;
+    }
+    
+    .box{
+        border: 1px solid ;
+        padding: 10px 30px 10px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 25px whitesmoke;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    #logo{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    h3{
+        margin-left: 6px;
+        color: red;
     }
     .player2{
         height: 16vh;
