@@ -22,24 +22,6 @@ header{
     padding-left: 80px;
     padding-top: 35px;
 }
-/* .top{
-    height: 10%;
-    position: absolute;
-    display: inline-block;
-    top: 1px;
-    left: 4%;
-}
-
-.box{
-    border: 1px solid;
-    margin-top: 20px;
-    padding: 5px 15px 5px 15px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 25px whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 h3{
     color: red;
@@ -54,34 +36,6 @@ footer{
     font-family: "Raleway",sans-serif;
     padding-right: 80px;
 }
-
-/* .bottom{
-    height: 10%;
-    position: fixed;
-    display: inline-block;
-    bottom: 1px;
-    right: 4%;
-}
-
-.box{
-    border: 1px solid;
-    padding: 10px 30px 10px 30px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 25px whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#logo{
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-h3{
-    margin-left: 6px;
-    color: red;
-} */
 
 .boldness{
     color: red;
@@ -197,7 +151,6 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center; 
-    /* margin:15px 0 15px 0; */
 }
 .active{
     color:black;
@@ -298,41 +251,7 @@ h3{
     padding-top: 18px;
     font-size: large;
 }
-/*.slider-track2{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 10px;
-    font-size: medium;
-}
-.seek-slider2{
-    -webkit-appearance: none;
-    -moz-appearance:none ;
-    appearance: none;
-    height: 5px;
-    background-color: white;
-    -webkit-transition: 0.2s;
-    -moz-transition: 0.2s;
-    transition: opacity 0.2s;
-    margin: 0px 10px;
-}
-.seek_slider2::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    background: white;
-    border: 3px solid black;
-    cursor: grab;
-    border-radius: 100%;
-}
-.seek-slider2:hover{
-    opacity: 1.0;
-}
-.seek-slider2{
-    width: 60%;
-} */
+
 .random-btn2,.prev-btn2,.playpause-btn2,.next-btn2,.repeat-btn2{
     font-size: 1.3rem;
     /* padding: 25px; */
@@ -345,10 +264,7 @@ h3{
 .ri-shuffle-line:hover,.ri-rewind-fill:hover,.ri-pause-large-line:hover,.ri-play-large-fill:hover,.ri-speed-fill:hover,.ri-reset-right-line:hover{
     cursor: pointer;
 }
-/* .player.hide{
-    height: 20vh;
-    width: 70vh;
-} */
+
 @media screen and (max-width:500px){
     .header{
         margin: 0;
@@ -414,63 +330,11 @@ h3{
         padding-top: 23px;
         font-size: 27px;
     }
-    /* .top{
-        height: 10%;
-        position: absolute;
-        display: inline-block;
-        top: 1px;
-        left: 4%;
-    }
-    
-    .box{
-        border: 1px solid;
-        margin-top: 20px;
-        padding: 5px 15px 5px 15px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 25px whitesmoke;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    h2{
-        color: red;
-        font-family: "Yellowtail",sans-serif;
-        text-shadow: red 1px 0 10px;
-    } */
 
     .footer{
         padding-right: 50px;
         font-size: 25px;
     }    
-    
-    /* .bottom{
-        height: 10%;
-        position: fixed;
-        display: inline-block;
-        bottom: 1px;
-        right: 4%;
-    }
-    
-    .box{
-        border: 1px solid ;
-        padding: 10px 30px 10px 30px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 25px whitesmoke;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #logo{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    
-    h3{
-        margin-left: 6px;
-        color: red;
-    } */
 }
 @media screen and (min-height:780px) and (max-height:1100px){
     .player2{
@@ -485,63 +349,6 @@ h3{
     .footer{
         font-size: 30px;
     }
-    /* .header{
-        padding-left: 40px;
-        padding-top: 23px;
-        font-size: 27px;
-    }
-    .top{
-        height: 10%;
-        position: absolute;
-        display: inline-block;
-        top: 1px;
-        left: 4%;
-    }
-    
-    .box{
-        border: 1px solid;
-        margin-top: 20px;
-        padding: 5px 15px 5px 15px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 25px whitesmoke;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    h2{
-        color: red;
-        font-family: "Yellowtail",sans-serif;
-        text-shadow: red 1px 0 10px;
-    }
-    
-    .bottom{
-        height: 10%;
-        position: fixed;
-        display: inline-block;
-        bottom: 1px;
-        right: 4%;
-    }
-    
-    .box{
-        border: 1px solid ;
-        padding: 10px 30px 10px 30px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 25px whitesmoke;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    #logo{
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    
-    h3{
-        margin-left: 6px;
-        color: red;
-    } */
     .player2{
         height: 18vh;
         width: 36vw;
