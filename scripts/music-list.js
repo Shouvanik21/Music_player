@@ -31,27 +31,27 @@ const music_list=[
     },
     {
         img:"./media/pic/img6.jpg",
-        name:"I Wanna Be Yours",
-        artist:"Arctic Monkeys",
-        music:"./media/song/Arctic Monkeys - I Wanna Be Yours.mp3"
-    },
-    {
-        img:"./media/pic/img7.jpg",
         name:"Hurt You",
         artist:"Gesaffelstein and The Weeknd",
         music:"./media/song/The Weeknd - Hurt You feat. Gesaffelstein.mp3"
     },
     {
+        img:"./media/pic/img7.jpg",
+        name:"I Wanna Be Yours",
+        artist:"Arctic Monkeys",
+        music:"./media/song/Arctic Monkeys - I Wanna Be Yours.mp3"
+    },
+    {
         img:"./media/pic/img8.jpg",
-        name:"As You Fade Away",
-        artist:"NEFFEX",
-        music:"./media/song/As_You_Fade_Away-NEFFEX.mp3"
+        name:"Wicked Games",
+        artist:"The Weeknd",
+        music:"./media/song/The Weeknd - Wicked Games.mp3"
     },
     {
         img:"./media/pic/img9.jpg",
-        name:"One Kiss",
-        artist:"Calvin Harris and Dua Lipa",
-        music:"./media/song/Calvin Harris, Dua Lipa - One Kiss.mp3"
+        name:"As You Fade Away",
+        artist:"NEFFEX",
+        music:"./media/song/As_You_Fade_Away-NEFFEX.mp3"
     },
     {
         img:"./media/pic/img10.jpg",
