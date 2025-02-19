@@ -474,7 +474,7 @@ h3{
 }
 @media screen and (min-height:780px) and (max-height:1100px){
     .player2{
-        height: 16vh;
+        height: 18vh;
         width: 75vw;
     }
 }
@@ -543,7 +543,7 @@ h3{
         color: red;
     } */
     .player2{
-        height: 16vh;
+        height: 18vh;
         width: 36vw;
     }
 }
